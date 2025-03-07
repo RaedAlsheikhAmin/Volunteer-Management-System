@@ -1,0 +1,223 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;  
+    padding: 0;
+    background: url('../images/admin_background2.webp') no-repeat center center fixed;  /* to add an image later on for the background */
+    background-size: cover; /* to Ensure the background image covers the full screen */
+    color: #352424;
+    min-height: 100vh;  /* Ensure the body takes full height of the viewport */
+}
+
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], select, input[type="email"], input[type="date"], textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"], .button {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+input[type="submit"]:hover, .button:hover {
+    background-color: #34495e;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Style for the Register Link */
+a.register-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+a.register-link:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action Links for Edit/Delete/Assign Task */
+a.action-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+a.action-link:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Button Styling */
+.button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .button {
+        padding: 8px 15px;
+    }
+}
+/* Logout Button Styling */
+.logout-button {
+    background-color: #e74c3c; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right; /* To place it on the top-right corner */
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    color: white;
+}
+/* Navigation Menu Styling */
+ul.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #2c3e50;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start; /* Align links to the left */
+}
+
+ul.nav-menu li {
+    display: inline-block;
+}
+
+ul.nav-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+ul.nav-menu li a:hover {
+    background-color: #34495e;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Optional: Style for active page (if needed) */
+ul.nav-menu li a.active {
+    background-color: #e67e22;
+    color: white;
+}
